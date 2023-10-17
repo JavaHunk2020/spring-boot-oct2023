@@ -11,6 +11,11 @@ public class SpringThothitApplication implements CommandLineRunner {
 	//it is used to pull the bean and assign over here
 	@Autowired
 	BizService bizService;
+	
+	@Autowired
+	KiaService kiaService;
+	
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringThothitApplication.class, args);
@@ -18,7 +23,9 @@ public class SpringThothitApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		//Write logic to call the method
 		bizService.foo();
+		kiaService.zoo();
 	}
 
 }
