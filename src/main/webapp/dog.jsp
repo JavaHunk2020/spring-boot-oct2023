@@ -60,7 +60,7 @@
 	     <div class="form-group" style="width: 50%;margin-top: 20px;">
   	           <button type="submit"  class="btn btn-primary">Add Dog!</button>
   	           <a href="showDogs">
-  	              <button type="button"  class="btn btn-primary">Data!</button>
+  	              <button type="button"  class="btn btn-warning">Data!</button>
   	           </a>
 	    </div>
 	</form>    

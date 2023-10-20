@@ -1,12 +1,15 @@
 package com.spring;
 
+import java.sql.Timestamp;
+
 public class Dog {
 
 	String name;
 	String color;
 	String breed;
 	String url;
-
+	Timestamp cdate;
+	
 	public Dog() {
 	}
 
@@ -16,6 +19,32 @@ public class Dog {
 		this.breed = breed;
 		this.url = url;
 	}
+
+	public Timestamp getCdate() {
+		return cdate;
+	}
+
+	public void setCdate(Timestamp cdate) {
+		this.cdate = cdate;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	
 
 	public String getName() {
 		return name;

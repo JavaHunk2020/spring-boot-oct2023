@@ -28,23 +28,33 @@
 	 
     <img style="height: 60px;" src="https://www.iconpacks.net/icons/1/free-user-group-icon-307-thumb.png"/>
     
-    h3>Dog Details</h3>
+    <h3>Dog Details - >> coming soon!</h3>
   <table class="table table-bordered">
     <thead>
-      <tr>
+      <tr style="background-color: red !important;">
         <th>Name</th>
         <th>Color</th>
          <th>Breed</th>
         <th>Photo</th>
+         <th>DOB</th>
+          <th>Action</th>
       </tr>
     </thead>
     <tbody>
+     <c:forEach var="item" items="${nisha}">
       <tr>
-        <td>${tictick.name}</td>
-        <td>${tictick.color}</td>
-        <td>${tictick.breed}</td>
-        <td><img src="${tictick.url}" style="height: 120px;"></td>
+        <td>${item.name}</td>
+        <td>${item.color}</td>
+        <td>${item.breed}</td>
+        <td><img src="${item.url}" style="height: 120px;"></td>
+       <td>${item.cdate}</td>
+       <td>
+         <a href="deleteDog?cpname=${item.name}">
+  	          <button type="button"  class="btn btn-warning">DELETE!</button>
+          </a>
+       </td>
       </tr>
+      </c:forEach>
       
     </tbody>
   </table>
