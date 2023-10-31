@@ -2,8 +2,15 @@ package com.spring;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="dogs_tbl")
 public class Dog {
 
+	@Id
 	String name;
 	String color;
 	String breed;

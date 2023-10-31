@@ -28,11 +28,15 @@
 	 
     <img style="height: 60px;" src="https://www.iconpacks.net/icons/1/free-user-group-icon-307-thumb.png"/>
     
-    <h3>Dog Details - >> coming soon!</h3>
+    <h3 style="background-color: #ffc107;">Dog Details - >> coming soon!</h3>
   <table class="table table-bordered">
     <thead>
       <tr style="background-color: red !important;">
-        <th>Name</th>
+        <th>
+        <a href="sortByName?sortname=${sortname}">
+           Name
+        </a>
+        </th>
         <th>Color</th>
          <th>Breed</th>
         <th>Photo</th>

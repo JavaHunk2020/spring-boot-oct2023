@@ -11,5 +11,4 @@ public class SpringThothitApplication {
 		SpringApplication.run(SpringThothitApplication.class, args);
 	}
 
-
 }	
